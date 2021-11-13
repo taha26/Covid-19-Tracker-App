@@ -15,14 +15,15 @@ export const GlobalStatistic = () => {
         async function fetchData() {
 
             const response = await fetch("https://corona.lmao.ninja/v2/all?yesterday")
-            // console.log("response -->", response)
+            // https://corona.lmao.ninja/v2/countries?yesterday&sort states.....>
+            console.log("response -->", response)
             const data = await response.json()
-            // console.log("data -->", data)
-            setGlobalData(data);
+            console.log("data -->", data)
+            // setGlobalData(data);
         }
         fetchData()
     }, [])
-console.log("asc",globalData)
+// console.log("asc",globalData)
 
     // Material UI Script
 
